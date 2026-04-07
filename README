@@ -39,9 +39,7 @@ Dự án được tổ chức thành các phân phần tương ứng với các 
 ## 📁 Lưu trữ Mô hình (Model Storage)
 Do hạn chế về dung lượng của GitHub đối với các tệp tin lớn và cấu trúc đặc thù của thư mục Spark MLlib, các mô hình đã huấn luyện hoàn chỉnh được lưu trữ tại Google Drive.
 
-* 🔗 **Link tải Model tổng hợp:** [Click để tải về từ Google Drive](DÁN_LINK_DRIVE_CỦA_BẠN_VÀO_ĐÂY)
-
-> **Lưu ý:** Sau khi tải về, vui lòng giải nén các thư mục model và đặt vào đúng đường dẫn trong code để chạy giao diện Streamlit mà không cần huấn luyện lại.
+* 🔗 **Link tải Model tổng hợp:** https://drive.google.com/drive/folders/1nBK4xVgsCsQteYD4_pbG0Enaiz9r65Kz
 
 ---
 
