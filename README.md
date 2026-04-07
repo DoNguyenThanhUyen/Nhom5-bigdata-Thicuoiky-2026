@@ -40,14 +40,14 @@ Dự án được tổ chức thành các phân phần tương ứng với các 
 ## 📁 Lưu trữ Mô hình (Model Storage)
 Do hạn chế về dung lượng của GitHub, các mô hình đã huấn luyện hoàn chỉnh được lưu trữ tại Google Drive.
 
-* 🔗 **Link tải Model tổng hợp:** [Click để tải về từ Google Drive](https://drive.google.com/drive/folders/1nBK4xVgsCsQteYD4_pbG0Enaiz9r65Kz)
+* 🔗 **Link tải Model tổng hợp:**(https://drive.google.com/drive/folders/1nBK4xVgsCsQteYD4_pbG0Enaiz9r65Kz)
 
 ---
 
 ## 🛠 Công nghệ sử dụng
 * **Ngôn ngữ:** Python 3.12.13
 * **Xử lý dữ liệu lớn:** PySpark 3.5.1 (MLlib)
-* **Giao diện:** Streamlit
+* **Giao diện:** Gradio
 * **Trực quan hóa:** Plotly, Seaborn, Matplotlib
 
 ---
