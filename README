@@ -1,1 +1,60 @@
+# Xây dựng hệ thống phân tích hành vi khách hàng và khuyến nghị sản phẩm thông minh (Brazilian E-Commerce)
 
+Hệ thống phân tích dữ liệu lớn (End-to-End) sử dụng **Apache Spark MLlib** để xử lý, phân loại, phân cụm khách hàng và đưa ra các khuyến nghị sản phẩm dựa trên tập dữ liệu Olist (~100.000 đơn hàng).
+
+---
+
+## 👥 Thành viên thực hiện (Nhóm 05)
+| MSSV | Họ và Tên | Vai trò |
+| :--- | :--- | :--- |
+| **23126046** | **Nguyễn Ngọc Phương Trinh** | **Nhóm trưởng** |
+| 23126014 | Lê Nguyễn Thanh Huyền | Thành viên |
+| 23126024 | Nguyễn Thị Yến Linh | Thành viên |
+| 23126041 | Nguyễn Ngọc Minh Trang | Thành viên |
+| 23126053 | Đỗ Nguyễn Thanh Uyên | Thành viên |
+
+**Giảng viên hướng dẫn:** Thầy Hồ Nhựt Minh
+
+---
+
+## 🚀 Tổng quan đồ án
+Đồ án tập trung vào việc giải quyết bài toán Big Data trong thương mại điện tử tại thị trường Brazil, bao gồm:
+* **Tiền xử lý & Feature Engineering:** Xây dựng Spark ML Pipeline, phân tích RFM, TF-IDF.
+* **Mô hình hóa:** Triển khai 13 thuật toán thuộc 5 nhóm bài toán Machine Learning.
+* **Ứng dụng:** Dashboard trực quan hóa và dự đoán trực tuyến trên nền tảng Streamlit.
+
+---
+
+## 📂 Cấu trúc mã nguồn
+Dự án được tổ chức thành các phân phần tương ứng với các giai đoạn phân tích:
+* `(1) Classification/`: Dự đoán khả năng khách hàng rời bỏ (Churn) hoặc phân loại đơn hàng.
+* `(2) Regression/`: Dự báo giá trị thanh toán và thời gian giao hàng.
+* `(3) Clustering/`: Phân khúc khách hàng dựa trên chỉ số RFM (K-Means, GMM).
+* `(4) Recommendation/`: Hệ thống gợi ý sản phẩm sử dụng thuật toán ALS.
+* `(5) FP-Growth/`: Khai phá luật kết hợp từ giỏ hàng.
+* `Streamlit/`: Mã nguồn giao diện người dùng Web Dashboard.
+
+---
+
+## 📁 Lưu trữ Mô hình (Model Storage)
+Do hạn chế về dung lượng của GitHub đối với các tệp tin lớn và cấu trúc đặc thù của thư mục Spark MLlib, các mô hình đã huấn luyện hoàn chỉnh được lưu trữ tại Google Drive.
+
+* 🔗 **Link tải Model tổng hợp:** [Click để tải về từ Google Drive](DÁN_LINK_DRIVE_CỦA_BẠN_VÀO_ĐÂY)
+
+> **Lưu ý:** Sau khi tải về, vui lòng giải nén các thư mục model và đặt vào đúng đường dẫn trong code để chạy giao diện Streamlit mà không cần huấn luyện lại.
+
+---
+
+## 🛠 Công nghệ sử dụng
+* **Ngôn ngữ:** Python 3.12.13
+* **Xử lý dữ liệu lớn:** PySpark 3.5.1 (MLlib)
+* **Giao diện:** Streamlit
+* **Trực quan hóa:** Plotly, Seaborn, Matplotlib
+* **Môi trường:** Google Colab / Databricks
+
+---
+
+## 📊 Kết quả đạt được
+* **Pipeline:** Tự động hóa quy trình từ dữ liệu thô (9 file CSV) đến đặc trưng vector.
+* **Hiệu năng:** GBTClassifier đạt độ chính xác cao nhất trong nhóm phân loại; K-Means tối ưu hóa phân cụm với K=4.
+* **Thực tiễn:** Hệ thống hỗ trợ doanh nghiệp đưa ra chiến lược Marketing cá nhân hóa cho từng phân khúc khách hàng.
